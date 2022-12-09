@@ -22,4 +22,7 @@ the app folder. `RUN` builds the container. `EXPOSE 80` exposes `port 80` for li
 <br />
 `Docker run <id>` starts the container.  
 <br />
-`Docker run -p 3000:80 <id>` let's you access the web-app on `localhost:3000`. `3000:80` means that inside the vm port `80` is listening. 
+`Docker run -p 3000:80 <id>` let's you access the web-app on `localhost:3000`. `3000:80` means that inside the vm port `80` is listening.  
+<br />
+If you make changes, for example on the `server.js`, you need to rebuild your Docker image with `Docker build .`.  
+<br />
